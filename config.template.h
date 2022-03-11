@@ -11,23 +11,25 @@ static const char dmenufont[]       = "FontAwesome:size=10";
 //PLACE-COLORS-HERE
 
 /* tagging */
-static const char *tags[] = { "\uf120", "\uf015", "\uf269", "\uf15b", "\uf086", "\uf001", "\uf1f8" };
+static const char *tags[] = { "\uf120", "\uf015", "\uf269", "\uf03d", "\uf086", "\uf001", "\uf1f8" };
 
 static const Rule rules[] = {
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       1 << 1,           0,           -1 },
-	{ "firefox",NULL, NULL,               1 << 2,           0,           -1 },
-	{ "VirtualBox Manager", NULL, NULL,   1 << 6,           0,           -1 },
-	{ "Steam", NULL, NULL,                1 << 1,           0,           -1 },
-	{ "Lutris", NULL, NULL,               1 << 1,           0,           -1 },
-	{ "discord", NULL, NULL,              1 << 4,           0,           -1 },
-	{ "Spotify", NULL, NULL,              1 << 5,           0,           -1 },
-	{ "Brave", NULL, NULL,                1 << 2,           0,           -1 },
-	{ "Signal", NULL, NULL,               1 << 4,           0,           -1 },
+	/* class          instance    title       tags mask     isfloating   monitor */
+	{ "Gimp",         NULL,       NULL,       1 << 1,           0,           -1 },
+	{ "firefox",      NULL,       NULL,       1 << 2,           0,           -1 },
+	{ "Virt-manager", NULL,       NULL,       1 << 6,           0,           -1 },
+	{ "Steam",        NULL,       NULL,       1 << 1,           0,           -1 },
+	{ "Lutris",       NULL,       NULL,       1 << 1,           0,           -1 },
+	{ "discord",      NULL,       NULL,       1 << 4,           0,           -1 },
+	{ "spotify",      NULL,       NULL,       1 << 5,           0,           -1 },
+	{ "Brave",        NULL,       NULL,       1 << 2,           0,           -1 },
+	{ "Chromium",     NULL,       NULL,       1 << 2,           0,           -1 },
+	{ "Signal",       NULL,       NULL,       1 << 4,           0,           -1 },
+	{ "mpv",          NULL,       NULL,       1 << 3,           0,           -1 },
 };
 
 /* layout(s) */
