@@ -5,21 +5,21 @@ static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "FontAwesome:size=10" };
-static const char dmenufont[]       = "FontAwesome:size=10";
+static const char *fonts[]          = { "JetBrains Mono:size=10"};
+static const char dmenufont[]       = "JetBrains Mono:size=10";
 
 //PLACE-COLORS-HERE
-static const char norm_fg[] = "#cbc7c4";
-static const char norm_bg[] = "#140e11";
-static const char norm_border[] = "#8e8b89";
+static const char norm_fg[] = "#e6e4e3";
+static const char norm_bg[] = "#352231";
+static const char norm_border[] = "#a19f9e";
 
-static const char sel_fg[] = "#cbc7c4";
-static const char sel_bg[] = "#9A5A33";
-static const char sel_border[] = "#cbc7c4";
+static const char sel_fg[] = "#e6e4e3";
+static const char sel_bg[] = "#FEE798";
+static const char sel_border[] = "#e6e4e3";
 
-static const char urg_fg[] = "#cbc7c4";
-static const char urg_bg[] = "#675D51";
-static const char urg_border[] = "#675D51";
+static const char urg_fg[] = "#e6e4e3";
+static const char urg_bg[] = "#FBD78B";
+static const char urg_border[] = "#FBD78B";
 
 static const char *colors[][3]      = {
     /*               fg           bg         border                         */
@@ -36,17 +36,18 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class          instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",         NULL,       NULL,       1 << 1,           0,           -1 },
-	{ "firefox",      NULL,       NULL,       1 << 2,           0,           -1 },
-	{ "Virt-manager", NULL,       NULL,       1 << 6,           0,           -1 },
-	{ "Steam",        NULL,       NULL,       1 << 1,           0,           -1 },
-	{ "Lutris",       NULL,       NULL,       1 << 1,           0,           -1 },
-	{ "discord",      NULL,       NULL,       1 << 4,           0,           -1 },
-	{ "spotify",      NULL,       NULL,       1 << 5,           0,           -1 },
-	{ "Brave",        NULL,       NULL,       1 << 2,           0,           -1 },
-	{ "Chromium",     NULL,       NULL,       1 << 2,           0,           -1 },
-	{ "Signal",       NULL,       NULL,       1 << 4,           0,           -1 },
-	{ "mpv",          NULL,       NULL,       1 << 3,           0,           -1 },
+	{ "Gimp",         	NULL,       NULL,       1 << 1,           0,           -1 },
+	{ "firefox",      	NULL,       NULL,       1 << 2,           0,           -1 },
+	{ "Virt-manager", 	NULL,       NULL,       1 << 6,           0,           -1 },
+	{ "Steam",        	NULL,       NULL,       1 << 1,           0,           -1 },
+	{ "Lutris",       	NULL,       NULL,       1 << 1,           0,           -1 },
+	{ "discord",      	NULL,       NULL,       1 << 4,           0,           -1 },
+	{ "Spotify",      	NULL,       NULL,       1 << 5,           0,           -1 },
+	{ "Brave",        	NULL,       NULL,       1 << 2,           0,           -1 },
+	{ "Chromium",     	NULL,       NULL,       1 << 2,           0,           -1 },
+	{ "Signal",       	NULL,       NULL,       1 << 4,           0,           -1 },
+	{ "mpv",          	NULL,       NULL,       1 << 3,           0,           -1 },
+	{ "jetbrains-studio",	NULL,	    NULL,       1 << 1,           0,           -1 },
 };
 
 /* layout(s) */
@@ -57,8 +58,8 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[ ]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
+	{ "[ ]",      tile },    /* first entry is default */
+	{ "< >",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 };
 

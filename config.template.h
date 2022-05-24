@@ -5,8 +5,8 @@ static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "FontAwesome:size=10" };
-static const char dmenufont[]       = "FontAwesome:size=10";
+static const char *fonts[]          = { "JetBrains Mono:size=10"};
+static const char dmenufont[]       = "JetBrains Mono:size=10";
 
 //PLACE-COLORS-HERE
 
@@ -19,17 +19,18 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class          instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",         NULL,       NULL,       1 << 1,           0,           -1 },
-	{ "firefox",      NULL,       NULL,       1 << 2,           0,           -1 },
-	{ "Virt-manager", NULL,       NULL,       1 << 6,           0,           -1 },
-	{ "Steam",        NULL,       NULL,       1 << 1,           0,           -1 },
-	{ "Lutris",       NULL,       NULL,       1 << 1,           0,           -1 },
-	{ "discord",      NULL,       NULL,       1 << 4,           0,           -1 },
-	{ "spotify",      NULL,       NULL,       1 << 5,           0,           -1 },
-	{ "Brave",        NULL,       NULL,       1 << 2,           0,           -1 },
-	{ "Chromium",     NULL,       NULL,       1 << 2,           0,           -1 },
-	{ "Signal",       NULL,       NULL,       1 << 4,           0,           -1 },
-	{ "mpv",          NULL,       NULL,       1 << 3,           0,           -1 },
+	{ "Gimp",         	NULL,       NULL,       1 << 1,           0,           -1 },
+	{ "firefox",      	NULL,       NULL,       1 << 2,           0,           -1 },
+	{ "Virt-manager", 	NULL,       NULL,       1 << 6,           0,           -1 },
+	{ "Steam",        	NULL,       NULL,       1 << 1,           0,           -1 },
+	{ "Lutris",       	NULL,       NULL,       1 << 1,           0,           -1 },
+	{ "discord",      	NULL,       NULL,       1 << 4,           0,           -1 },
+	{ "Spotify",      	NULL,       NULL,       1 << 5,           0,           -1 },
+	{ "Brave",        	NULL,       NULL,       1 << 2,           0,           -1 },
+	{ "Chromium",     	NULL,       NULL,       1 << 2,           0,           -1 },
+	{ "Signal",       	NULL,       NULL,       1 << 4,           0,           -1 },
+	{ "mpv",          	NULL,       NULL,       1 << 3,           0,           -1 },
+	{ "jetbrains-studio",	NULL,	    NULL,       1 << 1,           0,           -1 },
 };
 
 /* layout(s) */
@@ -40,8 +41,8 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[ ]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
+	{ "[ ]",      tile },    /* first entry is default */
+	{ "< >",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 };
 
